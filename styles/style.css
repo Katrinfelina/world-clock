@@ -1,5 +1,9 @@
 body {
-  background-color: #1b1a16;
+  background: radial-gradient(
+    circle at 24.1% 68.8%,
+    rgb(50, 50, 50) 0%,
+    rgb(0, 0, 0) 99.4%
+  );
 }
 
 h1 {
@@ -8,7 +12,7 @@ h1 {
   font-size: 45px;
   font-weight: 400;
   color: rgb(255, 255, 255);
-  margin: 20px auto;
+  margin: 18px auto;
 }
 
 select {
@@ -21,6 +25,68 @@ select {
   padding: 3px;
   background-color: rgb(194, 193, 193);
 }
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: repeat(5, 1fr);
+  padding: 0px;
+  gap: 0px;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(251, 250, 250, 0.212);
+}
+
+.grid-item {
+  flex: 0 0 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 700px;
+  width: 350px;
+  background-size: cover;
+  background-position: center;
+  box-sizing: border-box;
+  margin: 0;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+  transition: border 0.3s ease-in-out;
+}
+
+.grid-item:hover {
+  border: 2px solid white;
+}
+
+.grid-item:nth-child(1) {
+  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/Tokyo_small.jpg?raw=true");
+  background-position: left center;
+}
+.grid-item:nth-child(2) {
+  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/Rome_small.jpg?raw=true");
+  background-position: 30% center;
+}
+.grid-item:nth-child(3) {
+  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/London_small.jpg?raw=true");
+  background-position: 70% center;
+}
+.grid-item:nth-child(4) {
+  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/Sydney_small.jpg?raw=true");
+  background-position: right center;
+}
+.grid-item:nth-child(5) {
+  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/LA_small.jpg?raw=true");
+}
+/*
+https://github.com/Katrinfelina/world-clock/blob/main/Tokyo_small.jpg?raw=true Tokyo
+https://github.com/Katrinfelina/world-clock/blob/main/LA_small.jpg?raw=true LA
+https://github.com/Katrinfelina/world-clock/blob/main/Rome_small.jpg?raw=true Rome
+https://github.com/Katrinfelina/world-clock/blob/main/London_small.jpg?raw=true London
+https://github.com/Katrinfelina/world-clock/blob/main/Sydney_small.jpg?raw=true Sydney
+https://github.com/Katrinfelina/world-clock/blob/main/Bangkok_small.jpg?raw=true BKK
+https://github.com/Katrinfelina/world-clock/blob/main/New%20York_small.jpg?raw=true New York
+https://github.com/Katrinfelina/world-clock/blob/main/Paris_small%20(2).jpg?raw=true Paris
+
+*/
 
 .span {
   display: block;
@@ -66,66 +132,14 @@ select {
   top: 490px;
 }
 
-.grid-container {
-  display: flex;
-  flex-wrap: wrap;
-  grid-template-columns: repeat(5, 1fr);
-  padding: 0px;
-  gap: 0px;
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: rgba(251, 250, 250, 0.212);
-}
-
-.grid-item {
-  flex: 0 0 20%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 700px;
-  width: 350px;
-  background-size: cover;
-  background-position: center;
-  box-sizing: border-box;
-  margin: 0;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-  transition: border 0.3s ease-in-out;
-}
-
-.grid-item:hover {
-  border: 2px solid white;
-}
-
-.grid-item:nth-child(1) {
-  background-image: url("https://i.imgur.com/N20VAjX.jpeg");
-  background-position: left center;
-}
-.grid-item:nth-child(2) {
-  background-image: url("https://i.imgur.com/mJGZsRf.jpeg");
-  background-position: 30% center;
-}
-.grid-item:nth-child(3) {
-  background-image: url("https://i.imgur.com/jIGuMd3.jpeg");
-  background-position: 70% center;
-}
-.grid-item:nth-child(4) {
-  background-image: url("https://i.imgur.com/TS7Wmf5.jpeg");
-  background-position: right center;
-}
-.grid-item:nth-child(5) {
-  background-image: url("https://i.imgur.com/IO5XvqJ.jpeg");
-}
-/*
-https://i.imgur.com/N20VAjX.jpeg Tokyo
-https://i.imgur.com/IO5XvqJ.jpeg LA
-https://i.imgur.com/mJGZsRf.jpeg Rome
-https://i.imgur.com/jIGuMd3.jpeg London
-https://i.imgur.com/tSFLL3r.jpeg Sydney
-https://i.imgur.com/TS7Wmf5.jpeg BKK
-
-*/
-
 footer {
+  display: block;
   text-align: center;
+  padding: 20px;
+  font-family: "Nunito Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.737);
+}
+
+a {
+  color: rgb(194, 193, 193);
 }
