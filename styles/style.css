@@ -4,6 +4,8 @@ body {
     rgb(50, 50, 50) 0%,
     rgb(0, 0, 0) 99.4%
   );
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1 {
@@ -33,6 +35,14 @@ select {
   padding: 0px;
   gap: 0px;
   max-width: 1200px;
+  margin: 0 auto;
+  background-color: rgba(251, 250, 250, 0.212);
+}
+
+.grid-container-change {
+  padding: 0px;
+  gap: 0px;
+  max-width: 350px;
   margin: 0 auto;
   background-color: rgba(251, 250, 250, 0.212);
 }
@@ -75,6 +85,14 @@ select {
 }
 #los-angeles {
   background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/LA_small.jpg?raw=true");
+}
+
+#Bangkok {
+  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/Bangkok_small.jpg?raw=true");
+}
+
+#New_York {
+  background-image: url("https://as2.ftcdn.net/jpg/00/87/33/55/1000_F_87335557_6vFmepfk6xcdqUnrGrz3uYMsU1PSbx7Y.jpg");
 }
 /*
 https://github.com/Katrinfelina/world-clock/blob/main/Tokyo_small.jpg?raw=true Tokyo

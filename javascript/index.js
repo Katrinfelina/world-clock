@@ -72,5 +72,36 @@ function updateTime() {
     .format("D MMMM YYYY");
 }
 
+function updateCity(event) {
+  let cityTimeZone;
+  if (event.target.value === "user-location") {
+    cityTimeZone = moment.tz.guess();
+  } else {
+    cityTimeZone = event.target.value;
+  }
+  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+  let cityId = cityTimeZone.split("/")[1];
+  let cityContinent = cityTimeZone.replace("_", " ").split("/")[0];
+  let cityTime = moment().tz(cityTimeZone).format("HH:mm");
+  let cityUtc = moment().tz("cityTimeZone").format("[UTC] Z");
+  let cityDate = moment().tz("cityTimeZone").format("D MMMM YYYY");
+  let citiesElement = document.querySelector("#cities");
+  citiesElement.innerHTML = `
+  <div class="grid-container-change">
+       <div class="grid-item" id="${cityId}">
+        <span class="city-name">${cityName}</span>
+        <span class="continent">${cityContinent}</span>
+        <span class="time">${cityTime}</span>
+        <span class="utc">${cityUtc}</span>
+        <span class="date">${cityDate}</span>
+      </div>
+      </div>
+    `;
+}
+
 updateTime();
 setInterval(updateTime, 60000);
+
+let citiesSelectElement = document.querySelector("#city");
+
+citiesSelectElement.addEventListener("change", updateCity);
