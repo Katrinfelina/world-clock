@@ -1,31 +1,76 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background: radial-gradient(
-    circle at 24.1% 68.8%,
-    rgb(50, 50, 50) 0%,
-    rgb(0, 0, 0) 99.4%
-  );
-  background-repeat: no-repeat;
+  background: #222; /* oder deine gewünschte Hintergrundfarbe */
   background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Verhindert, dass der Hintergrund scrollt */
+  background-position: center;
+  min-height: 100vh; /* stellt sicher, dass der Hintergrund mindestens die volle Höhe bedeckt */
 }
 
 h1 {
   text-align: center;
   font-family: "Nunito Sans", sans-serif;
-  font-size: 45px;
+  font-size: 42px;
   font-weight: 400;
   color: rgb(255, 255, 255);
-  margin: 18px auto;
+  margin: 25px auto;
 }
 
 select {
   display: block;
+  cursor: pointer;
   text-align: center;
   font-family: "Nunito Sans", sans-serif;
   font-weight: 300;
-  font-size: 18px;
-  margin: 20px auto;
-  padding: 3px;
+  font-size: 16px;
+  margin: 15px auto;
   background-color: rgb(194, 193, 193);
+
+  appearance: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+}
+
+button {
+  display: block;
+  margin: 10px auto 0px auto;
+  background: none;
+  border: none;
+  font-size: 24px; /* Größe des Symbols */
+  cursor: pointer;
+  color: rgb(231, 231, 231);
+  position: relative;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  padding: 10px 0px 15px 0px;
+  font-family: "Nunito Sans", sans-serif;
+  color: rgba(255, 255, 255, 0.737);
+}
+
+a {
+  color: rgb(194, 193, 193);
+  font-weight: 200;
+  text-decoration: none;
+}
+
+.content-container {
+  transform: scale(0.85); /* hier z.B. 90% der Originalgröße */
+  transform-origin: top center;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .grid-container {
@@ -92,21 +137,27 @@ select {
 }
 
 #New_York {
-  background-image: url("https://as2.ftcdn.net/jpg/00/87/33/55/1000_F_87335557_6vFmepfk6xcdqUnrGrz3uYMsU1PSbx7Y.jpg");
+  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/New%20York_small%20(2).jpg?raw=true");
 }
-/*
-https://github.com/Katrinfelina/world-clock/blob/main/Tokyo_small.jpg?raw=true Tokyo
-https://github.com/Katrinfelina/world-clock/blob/main/LA_small.jpg?raw=true LA
-https://github.com/Katrinfelina/world-clock/blob/main/Rome_small.jpg?raw=true Rome
-https://github.com/Katrinfelina/world-clock/blob/main/London_small.jpg?raw=true London
-https://github.com/Katrinfelina/world-clock/blob/main/Sydney_small.jpg?raw=true Sydney
-https://github.com/Katrinfelina/world-clock/blob/main/Bangkok_small.jpg?raw=true BKK
-https://github.com/Katrinfelina/world-clock/blob/main/New%20York_small.jpg?raw=true New York
-https://github.com/Katrinfelina/world-clock/blob/main/Paris_small%20(2).jpg?raw=true Paris
 
-*/
+#Paris {
+  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/Paris%20(2)_small.jpg?raw=true");
+  background-position: 55% center;
+}
 
-.span {
+#Casablanca {
+  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/Casablanca_small.jpg?raw=true");
+}
+
+#Auckland {
+  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/Auckland_small.jpg?raw=true");
+}
+
+#user-location {
+  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/Location_small.jpg?raw=true");
+}
+
+*/ .span {
   display: block;
 }
 
@@ -148,16 +199,4 @@ https://github.com/Katrinfelina/world-clock/blob/main/Paris_small%20(2).jpg?raw=
   text-transform: uppercase;
   position: relative;
   top: 490px;
-}
-
-footer {
-  display: block;
-  text-align: center;
-  padding: 20px;
-  font-family: "Nunito Sans", sans-serif;
-  color: rgba(255, 255, 255, 0.737);
-}
-
-a {
-  color: rgb(194, 193, 193);
 }

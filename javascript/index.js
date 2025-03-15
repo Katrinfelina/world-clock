@@ -1,3 +1,27 @@
+document.getElementById("reloadButton").addEventListener("click", function () {
+  location.reload();
+});
+
+const bgImages = [
+  "https://github.com/Katrinfelina/world-clock/blob/main/Tokyo_small.jpg?raw=true",
+  "https://github.com/Katrinfelina/world-clock/blob/main/Rome_small.jpg?raw=true",
+  "https://github.com/Katrinfelina/world-clock/blob/main/London_small.jpg?raw=true",
+  "https://github.com/Katrinfelina/world-clock/blob/main/Sydney_small.jpg?raw=true",
+  "https://github.com/Katrinfelina/world-clock/blob/main/LA_small.jpg?raw=true",
+  "https://github.com/Katrinfelina/world-clock/blob/main/Bangkok_small.jpg?raw=true",
+  "https://github.com/Katrinfelina/world-clock/blob/main/New%20York_small%20(2).jpg?raw=true",
+  "https://github.com/Katrinfelina/world-clock/blob/main/Paris_small%20(2).jpg?raw=true",
+  "https://github.com/Katrinfelina/world-clock/blob/main/Casablanca_small.jpg?raw=true",
+  "https://github.com/Katrinfelina/world-clock/blob/main/Auckland_small.jpg?raw=true",
+  "https://github.com/Katrinfelina/world-clock/blob/main/Location_small.jpg?raw=true",
+];
+
+// Bilder vorladen
+bgImages.forEach((src) => {
+  const img = new Image();
+  img.src = src;
+});
+
 function updateTime() {
   //tokyo
   let tokyoElement = document.querySelector("#tokyo");
@@ -74,13 +98,15 @@ function updateTime() {
 
 function updateCity(event) {
   let cityTimeZone;
+  let cityId;
   if (event.target.value === "user-location") {
     cityTimeZone = moment.tz.guess();
+    cityId = "user-location";
   } else {
     cityTimeZone = event.target.value;
+    cityId = cityTimeZone.split("/")[1];
   }
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
-  let cityId = cityTimeZone.split("/")[1];
   let cityContinent = cityTimeZone.replace("_", " ").split("/")[0];
   let cityTime = moment().tz(cityTimeZone).format("HH:mm");
   let cityUtc = moment().tz("cityTimeZone").format("[UTC] Z");
