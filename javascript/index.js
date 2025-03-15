@@ -109,8 +109,8 @@ function updateCity(event) {
   let cityName = cityTimeZone.replace("_", " ").split("/")[1];
   let cityContinent = cityTimeZone.replace("_", " ").split("/")[0];
   let cityTime = moment().tz(cityTimeZone).format("HH:mm");
-  let cityUtc = moment().tz("cityTimeZone").format("[UTC] Z");
-  let cityDate = moment().tz("cityTimeZone").format("D MMMM YYYY");
+  let cityUtc = moment().tz(cityTimeZone).format("[UTC] Z");
+  let cityDate = moment().tz(cityTimeZone).format("D MMMM YYYY");
   let citiesElement = document.querySelector("#cities");
   citiesElement.innerHTML = `
   <div class="grid-container-change">
