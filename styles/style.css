@@ -57,23 +57,23 @@ select {
   border: 2px solid white;
 }
 
-.grid-item:nth-child(1) {
+#tokyo {
   background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/Tokyo_small.jpg?raw=true");
   background-position: left center;
 }
-.grid-item:nth-child(2) {
+#rome {
   background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/Rome_small.jpg?raw=true");
   background-position: 30% center;
 }
-.grid-item:nth-child(3) {
+#london {
   background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/London_small.jpg?raw=true");
   background-position: 70% center;
 }
-.grid-item:nth-child(4) {
+#sydney {
   background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/Sydney_small.jpg?raw=true");
   background-position: right center;
 }
-.grid-item:nth-child(5) {
+#los-angeles {
   background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/LA_small.jpg?raw=true");
 }
 /*
@@ -101,7 +101,7 @@ https://github.com/Katrinfelina/world-clock/blob/main/Paris_small%20(2).jpg?raw=
   top: 85px;
 }
 
-.country {
+.continent {
   font-family: "Nunito Sans", sans-serif;
   font-size: 15px;
   text-transform: uppercase;
