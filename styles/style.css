@@ -25,7 +25,7 @@ h1 {
   font-size: 42px;
   font-weight: 400;
   color: rgb(255, 255, 255);
-  margin: 28px auto;
+  margin: 28px auto 20px;
 }
 
 select {
@@ -35,7 +35,7 @@ select {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 300;
   font-size: 16px;
-  margin: 15px auto;
+  margin: 18px auto 20px;
   appearance: none;
   padding: 8px 12px;
   border-radius: 5px;
@@ -121,48 +121,48 @@ a {
 }
 
 #tokyo {
-  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/Tokyo_small.jpg?raw=true");
+  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/media/Tokyo_small.jpg?raw=true");
   background-position: left center;
 }
 #rome {
-  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/Rome_small.jpg?raw=true");
+  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/media/Rome_small.jpg?raw=true");
   background-position: 30% center;
 }
 #london {
-  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/London_small.jpg?raw=true");
+  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/media/London_small.jpg?raw=true");
   background-position: 70% center;
 }
 #sydney {
-  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/Sydney_small.jpg?raw=true");
+  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/media/Sydney_small.jpg?raw=true");
   background-position: right center;
 }
 #los-angeles {
-  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/LA_small.jpg?raw=true");
+  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/media/LA_small.jpg?raw=true");
 }
 
 #Bangkok {
-  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/Bangkok_small.jpg?raw=true");
+  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/media/Bangkok_small.jpg?raw=true");
 }
 
 #New_York {
-  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/New%20York_small%20(2).jpg?raw=true");
+  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/media/New%20York_small%20(2).jpg?raw=true");
 }
 
 #Paris {
-  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/Paris%20(2)_small.jpg?raw=true");
+  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/media/Paris%20(2)_small.jpg?raw=true");
   background-position: 55% center;
 }
 
 #Casablanca {
-  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/Casablanca_small.jpg?raw=true");
+  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/media/Casablanca_small.jpg?raw=true");
 }
 
 #Auckland {
-  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/Auckland_small.jpg?raw=true");
+  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/media/Auckland_small.jpg?raw=true");
 }
 
 #user-location {
-  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/Location_small.jpg?raw=true");
+  background-image: url("https://github.com/Katrinfelina/world-clock/blob/main/media/Location_small.jpg?raw=true");
 }
 
 */ .span {

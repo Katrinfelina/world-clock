@@ -3,17 +3,17 @@ document.getElementById("reloadButton").addEventListener("click", function () {
 });
 
 const bgImages = [
-  "https://github.com/Katrinfelina/world-clock/blob/main/Tokyo_small.jpg?raw=true",
-  "https://github.com/Katrinfelina/world-clock/blob/main/Rome_small.jpg?raw=true",
-  "https://github.com/Katrinfelina/world-clock/blob/main/London_small.jpg?raw=true",
-  "https://github.com/Katrinfelina/world-clock/blob/main/Sydney_small.jpg?raw=true",
-  "https://github.com/Katrinfelina/world-clock/blob/main/LA_small.jpg?raw=true",
-  "https://github.com/Katrinfelina/world-clock/blob/main/Bangkok_small.jpg?raw=true",
-  "https://github.com/Katrinfelina/world-clock/blob/main/New%20York_small%20(2).jpg?raw=true",
-  "https://github.com/Katrinfelina/world-clock/blob/main/Paris_small%20(2).jpg?raw=true",
-  "https://github.com/Katrinfelina/world-clock/blob/main/Casablanca_small.jpg?raw=true",
-  "https://github.com/Katrinfelina/world-clock/blob/main/Auckland_small.jpg?raw=true",
-  "https://github.com/Katrinfelina/world-clock/blob/main/Location_small.jpg?raw=true",
+  "https://github.com/Katrinfelina/world-clock/blob/main/media/Tokyo_small.jpg?raw=true",
+  "https://github.com/Katrinfelina/world-clock/blob/main/media/Rome_small.jpg?raw=true",
+  "https://github.com/Katrinfelina/world-clock/blob/main/media/London_small.jpg?raw=true",
+  "https://github.com/Katrinfelina/world-clock/blob/main/media/Sydney_small.jpg?raw=true",
+  "https://github.com/Katrinfelina/world-clock/blob/main/media/LA_small.jpg?raw=true",
+  "https://github.com/Katrinfelina/world-clock/blob/main/media/Bangkok_small.jpg?raw=true",
+  "https://github.com/Katrinfelina/world-clock/blob/main/media/New%20York_small%20(2).jpg?raw=true",
+  "https://github.com/Katrinfelina/world-clock/blob/main/media/Paris%20(2)_small.jpg?raw=true",
+  "https://github.com/Katrinfelina/world-clock/blob/main/media/Casablanca_small.jpg?raw=true",
+  "https://github.com/Katrinfelina/world-clock/blob/main/media/Auckland_small.jpg?raw=true",
+  "https://github.com/Katrinfelina/world-clock/blob/main/media/Location_small.jpg?raw=true",
 ];
 
 // Bilder vorladen
