@@ -60,6 +60,10 @@ button {
   position: relative;
 }
 
+button:active {
+  color: #a9bbe4;
+}
+
 footer {
   display: block;
   text-align: center;
